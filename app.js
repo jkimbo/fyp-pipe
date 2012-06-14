@@ -119,6 +119,18 @@ var coach = {
    */
   publish: function() {
     console.log(this.currentPoint());
+    var time = new Date();
+    request.post({
+      url: config.url+'/coach/101',
+      json: true,
+      body: {
+        lat: this.currentPoint()[0],
+        lng: this.currentPoint()[1],
+        timestamp: time.getTime()
+      }
+    }, function(e, r, body) {
+      console.log(body);
+    });
   },
 
   /*
