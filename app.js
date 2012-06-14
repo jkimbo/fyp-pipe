@@ -186,31 +186,3 @@ var setVariableInterval = function(callbackFunc, timing) {
   return variableInterval.start();
 };
 
-/*
- * Publish loop
- */
-/*
-var timer = setVariableInterval(function() {
-  delete require.cache[require.resolve('./config')]; // delete config cache
-  config = require('./config'); // reload config
-  timer.interval = config.duration; // change timer duration
-
-  var time = new Date();
-  console.log('hello');
-  /*
-  request.post({
-    url: config.url+'/coach/101',
-    json: true,
-    body: {
-      lat: '51.522522891558964',
-      lng: '-0.1739358901977539',
-      timestamp: time.getTime()
-    }
-  }, function(e, r, body) {
-    console.log(body);
-  });
-  */
- /*
-}, config.duration);
-*/
-
