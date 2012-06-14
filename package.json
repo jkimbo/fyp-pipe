@@ -4,5 +4,9 @@
   , "private": true
   , "dependencies": {
       "request": ">=1.0.0"
+      , "googlemaps": ">=0.0"
+      , "mongoose": ">=2.0"
+      , "underscore": ">=1.0"
+      , "logme": ">=0.3.0"
   }
 }
